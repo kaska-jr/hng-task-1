@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Color Game</title>
+  </head>
+  <body>
+    <div class="container">
+      <section class="score-sheet">
+        <span>score:</span> <span class="score" data-testid="score">0</span>
+      </section>
+      <section class="title">
+        <h1>Color Game</h1>
+        <p>Guess the correct color!</p>
+      </section>
+      <section class="color-display">
+        <div class="color-display_color" data-testid="colorBox"></div>
+        <div class="color-display_message" data-testid="gameInstructions">
+          Select a color that best describe the displayed color
+        </div>
+      </section>
+      <section class="answer_container">
+        <button class="answer" data-testid="colorOption">Answer 1</button>
+        <button class="answer" data-testid="colorOption">Answer 2</button>
+        <button class="answer" data-testid="colorOption">Answer 3</button>
+        <button class="answer" data-testid="colorOption">Answer 4</button>
+        <button class="answer" data-testid="colorOption">Answer 5</button>
+        <button class="answer" data-testid="colorOption">Answer 6</button>
+      </section>
+      <button class="reset" data-testid="newGameButton">
+        <i class="bx bx-reset"></i> <span>New Game</span>
+      </button>
+    </div>
+
+    <div class="result-modal">
+      <div class="modal-content">
+        <div class="result" data-testid="gameStatus"></div>
+        <button class="continue">Continue</button>
+      </div>
+    </div>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
